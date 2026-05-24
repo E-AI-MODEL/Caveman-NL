@@ -1,7 +1,9 @@
 meta:
   name: "caveman-nl"
-  version: "1.0.0"
-  description: "Praat als holenman – redeneerkracht behouden, output-woorden schrappen"
+  version: "1.0.1"
+  description: "Nederlandstalige variant op caveman van Julius Brussee"
+  original_author: "Julius Brussee"
+  original_repo: "https://github.com/JuliusBrussee/caveman"
   philosophy: "Mond klein, brein groot. Raakt alleen output-tokens, nooit reasoning-tokens."
 
 levels:
@@ -59,10 +61,9 @@ slash_commands:
 mcp_middleware:
   name: "caveman-shrink"
   function: "Wikkelt MCP-servers, comprimeert tool descriptions tot kernwoorden"
-  token_saving: "tot 46% op tool descriptions"
+  token_saving: "nog niet gemeten in deze NL-variant"
 
 benchmarks:
-  bron: "originele repo (echohive42/caveman)"
-  range: "22-87%"
-  gemiddeld: "65%"
-  noot: "README claim '~75%' niet reproduceerbaar; gemeten gemiddelde is 65%"
+  originele_repo_claim: "~75% minder output-tokens"
+  originele_repo: "https://github.com/JuliusBrussee/caveman"
+  nl_variant_status: "nog geen eigen reproduceerbare benchmarkmeting"
